@@ -1,0 +1,40 @@
+
+# HTID:7134708: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+
+php_value display_errors 1
+
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:7134708:
+
+### Configuración
+
+# Deshabilitar indexado de directorios
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex index.php
+
+# Rescribir reglas
+<IfModule mod_rewrite.c>
+    
+    RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^(.+) - [PT,L]
+	RewriteRule ^(.*) index.php?/$1 [L]
+
+	RewriteCond %{REQUEST_URI} ^system.*
+	RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+	RewriteCond %{REQUEST_URI} ^application.*
+	RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+	RewriteCond %{HTTP:Authorization}  !^$
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+	
+</IfModule>
+
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 500 /index.php

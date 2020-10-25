@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgViewIconPatron"
+            android:src="@drawable/ic_primerbus"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_toRightOf="@+id/imgViewIconPatron"
+            android:layout_toLeftOf="@+id/imgViewStatusSolList"
+            android:id="@+id/textViewInfo"
+            android:text="Información" />
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgViewStatusSolList"
+            android:src="@drawable/ic_linea"/>
+    </RelativeLayout>
+</LinearLayout>

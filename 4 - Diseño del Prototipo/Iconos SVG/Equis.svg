@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="175"
+   viewBox="0 0 79.375 46.302083"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Equis.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.061871843"
+     inkscape:cx="-1327.8017"
+     inkscape:cy="-2683.5489"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Base"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-250.69792)"
+     style="display:inline"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Dibujo"
+     style="display:inline"
+     transform="translate(0,-169.59792)">
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:1;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.6465317;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 17.195537,175.26311 -3.711612,6.42828 19.00739,10.97297 -19.00739,11.14128 2.967251,6.42918 23.2368,-13.41502 23.235869,13.41502 2.96723,-6.42918 -19.00737,-11.14128 19.00737,-10.97297 -3.7116,-6.42828 -22.4915,13.18387 z"
+       id="rect1140-9-5-8-5-3"
+       inkscape:export-xdpi="212.74001"
+       inkscape:export-ydpi="212.74001" />
+  </g>
+</svg>

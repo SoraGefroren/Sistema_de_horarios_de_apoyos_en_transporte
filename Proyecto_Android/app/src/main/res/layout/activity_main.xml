@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- BUS de ESTADO -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/layoutBus">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_bus"
+                android:contentDescription="TODO" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_interrogacion"
+                android:id="@+id/imgViewEstado"/>
+        </RelativeLayout>
+        <!-- INFORMACION de ESTADO -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutBus"
+            android:id="@+id/layoutCalendario">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado del apoyo desconocido,\nPor favor, compruebe su conexión a internet"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textViewMsj"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textViewMsj"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_calendario"
+                android:id="@+id/imgViewCalendario"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgViewCalendario"
+                android:layout_centerHorizontal="true"
+                android:text="\??/\??/\??"
+                android:id="@+id/textViewFecha"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewFecha"
+                android:layout_centerHorizontal="true"
+                android:text="\??:?? a \??:??"
+                android:id="@+id/textViewHorario"/>
+        </RelativeLayout>
+        <!-- ESCENARIO -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutCalendario"
+            android:background="@drawable/ic_escenario"
+            android:id="@+id/layoutEscenario">
+
+            <!-- PICOS -->
+            <ImageView
+                android:id="@+id/imgViewPicoObscuroM"
+                android:layout_width="25dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_picoobscurom" />
+            <ImageView
+                android:id="@+id/imgViewPicoObscuro"
+                android:layout_width="25dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_picoobscuro" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_picoclaro"
+                android:id="@+id/imgViewPicoClaro"/>
+
+            <!-- BUSES IZQ y DER -->
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_bus"
+                android:id="@+id/imgViewBusDer"/>
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_bus"
+                android:id="@+id/imgViewBusIzq"/>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_interrogacion"
+                android:id="@+id/imgViewEstadoDer"/>
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_interrogacion"
+                android:id="@+id/imgViewEstadoIzq"/>
+
+            <!-- LINEA -->
+            <ImageView
+                android:id="@+id/imgViewLinea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="30dp"
+                android:src="@drawable/ic_lineaconsol15" />
+
+            <!-- BOTON PATROCINADORES -->
+            <ImageView
+                android:id="@+id/imgViewEstacion"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/textViewNota"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_estacion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Donde conseguir el apoyo?"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textViewNota"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
